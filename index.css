@@ -25,11 +25,9 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: #f0f0f0;
     background-image: url(https://files.catbox.moe/5cohzh.webp);
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
+    background-size: cover;
 }
 
 #player-name {
@@ -61,27 +59,25 @@
 
 #text-placeholder {
     font-family: 'Arial', sans-serif;
-    font-size: 20px;
+    font-size: 30px;
+    font-weight: bold;
     width: 80%;
     max-width: 600px;
     padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #f00;
+    background: rgba(0, 0, 0, 0.2);
     z-index: 2;
 }
 
 #top-message {
     font-family: 'Arial', sans-serif;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: bold;
     width: 80%;
     max-width: max-content;
-    padding: 20px;
-    color: red;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 8px;
+    color: #f00;
+    background: rgba(0, 0, 0, 0.2);
     margin: 10px;
     z-index: 2;
 }
