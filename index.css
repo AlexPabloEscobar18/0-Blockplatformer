@@ -11,54 +11,6 @@
     font-family: gamerFont;
 }
 
-#loading-screen {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-#loading-screen::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-image: url(https://files.catbox.moe/5cohzh.webp);
-    background-repeat: no-repeat;
-    background-size: cover;
-    filter: blur(5px);
-}
-#loading-screen p {
-    font-size: 20px;
-    padding: 10px;
-    color: #fff34d;
-    text-wrap: pretty;
-    background-color: black;
-    border-radius: 10px;
-    z-index: 1
-}
-
-.loader {
-    width: 64px;
-    height: 64px;
-    border: 6px solid rgba(0, 0, 0, 0.4);
-    border-top: 6px solid #fff34d;
-    border-radius: 50%;
-    animation: spin 0.4s linear infinite;
-    margin-top: 10px;
-}
-
-@keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
 #welcome-label {
     color: #fff34d;
     background-color: black;
