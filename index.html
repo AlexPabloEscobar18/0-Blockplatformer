@@ -7,7 +7,12 @@
     <title>Thug Platformer</title>
 </head>
 <body>
-    <div id="player-info-container">
+    <div id="loading-screen" style="display: flex;">
+        <p>please wait, game files are being loaded!</p>
+        <p>this won't take too much so please be patient!</p>
+        <div class="loader"></div>
+    </div>
+    <div id="player-info-container" style="display: none;">
         <h1 id="welcome-label">Welcome to the game!</h1>
         <br>
         <input type="text" id="player-name" placeholder="Enter your player name" maxlength="20">
