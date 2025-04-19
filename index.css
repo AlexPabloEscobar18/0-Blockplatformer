@@ -1,6 +1,6 @@
 @font-face {
     font-family: gamerFont;
-    src: url(font.otf);
+    src: url(font.woff2);
 }
 
 * {
@@ -11,37 +11,33 @@
     font-family: gamerFont;
 }
 
-#welcome-label {
-    color: #fff34d;
-    background-color: black;
-    padding: 10px;
-    border-radius: 10px;
-    text-align: center;
-}
-
 #player-info-container {
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-image: url(https://files.catbox.moe/0ftb4w.png);
+    padding-top: 300px;
+    background-image: url(https://files.catbox.moe/pgl35j.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 #player-name {
     padding: 10px;
-    font-size: 16px;
+    font-size: 1rem;
     margin-bottom: 10px;
+    width: 300px;
+    text-align: center;
 }
 
 #start-button {
     padding: 10px 20px;
-    font-size: 20px;
+    font-size: 1rem;
     cursor: pointer;
     border-radius: 4px;
     transition: filter 250ms ease-in-out;
     border: none;
+    text-align: center;
 }
 #start-button:hover {
     filter: invert(1);
@@ -78,4 +74,33 @@
     background: rgba(0, 0, 0, 0.2);
     margin: 10px;
     z-index: 2;
+}
+
+#credit-text {
+    font-size: 6rem;
+    font-weight: bold;
+    background: linear-gradient(
+        to right, 
+        #ff0000, 
+        #ff7f00, 
+        #ffff00, 
+        #00ff00, 
+        #0000ff, 
+        #4b0082, 
+        #9400d3
+    );
+    background-size: 400% 100%;
+    background-clip: text;
+    color: transparent;
+    animation: rainbowAnimation 1s linear infinite;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+@keyframes rainbowAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
 }
